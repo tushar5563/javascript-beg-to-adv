@@ -1,0 +1,1 @@
+//string,boolean,undefined,null(an object),bigint,number
