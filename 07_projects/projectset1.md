@@ -70,3 +70,21 @@ form.addEventListener('submit', function (e) {
 
 
 ```
+## Project Link
+
+[click here](https://stackblitz.com/edit/dom-project-chaiaurcode-5hoxsz?file=3-DigitalClock%2Fchaiaurcode.js)
+
+## Solution Code
+
+```JavaScript
+const clock = document.getElementById('clock');
+
+setInterval(function () {
+  let date = new Date();
+  //console.log(date.toLocaleDateString());
+  clock.innerHTML=date.toLocaleTimeString()
+
+}, 1000);
+
+
+```
