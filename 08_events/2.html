@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>open with live server</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("print tushar")
+    // },2000)
+    const sayTushar=function(){
+        console.log("print tushar")
+    }
+    const changeContent=function(){
+        document.querySelector('h1').innerHTML="Best course for javascript"
+
+    }
+    setTimeout(changeContent,2000)
+
+    const changeMe=setTimeout(changeText,2000)
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+</script>
+</html>
